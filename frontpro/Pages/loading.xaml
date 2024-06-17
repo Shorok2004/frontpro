@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="frontpro.Pages.loading"
+             Title="loading"
+             xmlns:core="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core">
+    
+    <core:SfBusyIndicator IsRunning="True"
+                          AnimationType="Cupertino"
+                          Title="Loading..."
+                          TitlePlacement="Top"
+                          DurationFactor="0.2"
+                          IndicatorColor="#512BD4"
+                          OverlayFill="White"
+                          SizeFactor="1"></core:SfBusyIndicator>
+
+</ContentPage>

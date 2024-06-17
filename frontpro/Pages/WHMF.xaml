@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="frontpro.Pages.WHMF"
+             Title="WHMF"
+             xmlns:editors="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- You don't need to define the xmlns:editors here, it's already defined in the root element -->
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout Padding="20">
+        <Label Text="Height (cm):" />
+        <editors:SfNumericEntry x:Name="heightEntry">
+            <editors:SfNumericEntry.Value>
+                <Binding Path="Height" StringFormat="0.##" />
+            </editors:SfNumericEntry.Value>
+        </editors:SfNumericEntry>
+
+        <Label Text="Weight (kg):" />
+        <editors:SfNumericEntry x:Name="weightEntry">
+            <editors:SfNumericEntry.Value>
+                <Binding Path="Weight" StringFormat="0.##" />
+            </editors:SfNumericEntry.Value>
+        </editors:SfNumericEntry>
+
+        <Label Text="Gender:" />
+        <Picker x:Name="GenderPicker">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Male</x:String>
+                    <x:String>Female</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Button Text="Next" Clicked="OnSubmitClicked" />
+    </StackLayout>
+
+</ContentPage>
+            
+     

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="frontpro.Pages.SignIn1"
+             Title="SignIn1">
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" WidthRequest="500">
+        <StackLayout Orientation="Vertical" VerticalOptions="Center">
+            <Label Text="siigninnnnnnn"
+       SemanticProperties.HeadingLevel="Level1"
+       FontSize="32"
+       TextColor="red"
+       HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+
+        <StackLayout VerticalOptions="CenterAndExpand">
+            
+        </StackLayout>
+        <StackLayout Padding="10">
+            
+        </StackLayout>
+        <Image Source="logo.png" HeightRequest="100"/>
+        <Entry x:Name="textemail" Placeholder="email" Margin="10"/>
+        <Entry x:Name="textpassword" IsPassword="True" Placeholder="Password" Text="" Margin="10"/>
+        <Button Text=" Sign In " Margin="10" Clicked="onsignclicked"/>
+        <Button Text="Register " BackgroundColor="Blue" Margin="10" Clicked="onredisterclicked"/>
+        <Button Text="forget password " BackgroundColor="Aqua" TextColor="Red" Clicked="onforgetpasswordclicked"/>
+
+    </StackLayout>
+</ContentPage> 
